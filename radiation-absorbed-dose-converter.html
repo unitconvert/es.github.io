@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	
+	<title>Radiation-Absorbed Dose Converter</title>
+	<meta name="description" content="Free online radiation-absorbed dose converter - converts between 23 units of radiation-absorbed dose, including rad [rd], millirad [mrd], joule/kilogram [J/kg], joule/gram [J/g], etc. Also, explore many other unit converters or learn more about radiation-absorbed dose unit conversions.">
+	<link rel="stylesheet" type="text/css" href="/lib/cmtoin.css"> 
+    <link rel="stylesheet" type="text/css" href="/lib/ads.css"> 
+    <script src="/lib/unit1.js" async=""></script> 
+    <meta property="og:locale" content="es"> 
+    <meta property="og:type" content="website"> 
+    <meta property="og:site_name" content="Unit Converter Vidfom.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<div id="google_translate_element" style="display:none;"></div>
+    <script type="text/javascript" src="/lib/element.js"></script>
+	<meta name="google-site-verification" content="Lgok9kGtWHPAaB_O0qHWdtt1hcVyWRwLpeFVzS2AEFY" />
+	<script src="/lib/unit.js" async></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="/lib/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/lib/icon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/lib/icon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div id="headerout">
+	<div id="header">
+		<div id="logo">  <a href="/"> <span class="panelmsg" translate="no"> <font style="color:#0637ef;font-size: 25px;">Unit</font><strong style="color:#000;font-size: 25px;">Converter</strong><font style="color: #807070;font-size: 25px;">.Vidfom.com</font></span></a></div>
+	</div>
+</div>
+<div id="clear"></div>
+<div id="contentout">
+	<div id="content">
+					<img src="../images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+				<div class="topnav"><a href="index.html">Inicio</a> / <a href="radiology-converters.html">Convertidores de radiología</a> / Convertidor de dosis absorbida por radiación</div>
+		<h1>Convertidor de dosis absorbida por radiación</h1>
+<div id="unquickcalc" style="display:none;"></div>
+
+<div id="ucresult" class="ucresulttext"></div>
+<form>
+<table id="uctable">
+	<tbody><tr>
+		<td class="uccell"><label for="ucfrom">De:</label>
+<br>
+<input type="text" name="ucfrom" class="ucinput" id="ucfrom" onkeyup="ucUpdateResult();" autofocus=""></td>
+		<td class="uccell"><label for="ucto">A:</label>
+<br>
+<input type="text" name="ucto" class="ucinput" id="ucto" style="background-color:#eeeeee;" readonly=""></td>
+	</tr>
+	<tr>
+		<td class="uccell">
+			<select name="ucfromunit" id="ucfromunit" size="15" onchange="ucUpdateResult();" class="ucselect"><option value="rad [rd] [1000000000000]" selected="">rad [rd]</option>
+<option value="millirad [mrd] [1.0E+15]">milirad [mrd]</option>
+<option value="joule/kilogram [J/kg] [10000000000]">julio/kilogramo [J/kg]</option>
+<option value="joule/gram [J/g] [10000000]">julio/gramo [J/g]</option>
+<option value="joule/centigram [J/cg] [100000]">julio/centigramo [J/cg]</option>
+<option value="joule/milligram [J/mg] [10000]">julio/miligramo [J/mg]</option>
+<option value="gray [Gy] [10000000000]">gris [Gy]</option>
+<option value="exagray [EGy] [1.0E-8]">exagray [EGy]</option>
+<option value="petagray [PGy] [1.0E-5]">gris petardo [PGy]</option>
+<option value="teragray [TGy] [0.01]">teragray [TGy]</option>
+<option value="gigagray [GGy] [10]">gigagray [GGy]</option>
+<option value="megagray [MGy] [10000]">megagris [MGy]</option>
+<option value="kilogray [kGy] [10000000]">kilogray [kGy]</option>
+<option value="hectogray [hGy] [100000000]">hectogris [hGy]</option>
+<option value="dekagray [daGy] [1000000000]">decagray [daGy]</option>
+<option value="decigray [dGy] [100000000000]">decigray [dGy]</option>
+<option value="centigray [cGy] [1000000000000]">centigray [cGy]</option>
+<option value="milligray [mGy] [10000000000000]">miligray [mGy]</option>
+<option value="microgray [µGy] [1.0E+16]">microgris [µGy]</option>
+<option value="nanogray [nGy] [1.0E+19]">nanogris [nGy]</option>
+<option value="picogray [pGy] [1.0E+22]">picogris [pGy]</option>
+<option value="femtogray [fGy] [1.0E+25]">gris femto [fGy]</option>
+<option value="attogray [aGy] [1.0E+28]">attogray [aGy]</option></select>
+		</td>
+		<td class="uccell">
+			<select name="uctounit" id="uctounit" size="15" onchange="ucUpdateResult();" class="ucselect">
+
+<option value="rad [rd] [1000000000000]">rad [rd]</option>
+<option value="millirad [mrd] [1.0E+15]">millirad [mrd]</option>
+<option value="joule/kilogram [J/kg] [10000000000]">joule/kilogram [J/kg]</option>
+<option value="joule/gram [J/g] [10000000]">joule/gram [J/g]</option>
+<option value="joule/centigram [J/cg] [100000]">joule/centigram [J/cg]</option>
+<option value="joule/milligram [J/mg] [10000]">joule/milligram [J/mg]</option>
+<option value="gray [Gy] [10000000000]">gray [Gy]</option>
+<option value="exagray [EGy] [1.0E-8]">exagray [EGy]</option>
+<option value="petagray [PGy] [1.0E-5]">petagray [PGy]</option>
+<option value="teragray [TGy] [0.01]">teragray [TGy]</option>
+<option value="gigagray [GGy] [10]">gigagray [GGy]</option>
+<option value="megagray [MGy] [10000]">megagray [MGy]</option>
+<option value="kilogray [kGy] [10000000]">kilogray [kGy]</option>
+<option value="hectogray [hGy] [100000000]">hectogray [hGy]</option>
+<option value="dekagray [daGy] [1000000000]">dekagray [daGy]</option>
+<option value="decigray [dGy] [100000000000]">decigray [dGy]</option>
+<option value="centigray [cGy] [1000000000000]">centigray [cGy]</option>
+<option value="milligray [mGy] [10000000000000]">milligray [mGy]</option>
+<option value="microgray [µGy] [1.0E+16]">microgray [µGy]</option>
+<option value="nanogray [nGy] [1.0E+19]">nanogray [nGy]</option>
+<option value="picogray [pGy] [1.0E+22]">picogray [pGy]</option><option value="femtogray [fGy] [1.0E+25]">femtogray [fGy]</option><option value="attogray [aGy] [1.0E+28]">attogray [aGy]</option></select>
+		</td>
+	</tr>
+</tbody></table>
+</form>
+<script>noValidation=0;</script>
+<br>
+<h3>Lista completa de unidades de dosis de radiación absorbida para conversión</h3>
+<ul class="allunits"><li>rad [rd]</li>
+<li>1 milirad [mrd] = 0,001 rad [rd]<div>
+<a href="radiation-absorbed-dose/millirad-to-rad.html">milirad en rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-millirad.html">rad en milirad</a></div></li>
+<li>1 julio/kilogramo [J/kg] = 100 rad [rd]<div>
+<a href="radiation-absorbed-dose/joule-kilogram-to-rad.html">julio/kilogramo en rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-joule-kilogram.html">rad en julio/kilogramo</a></div></li>
+<li>1 julio/gramo [J/g] = 100000 rad [rd]<div>
+<a href="radiation-absorbed-dose/joule-gram-to-rad.html">julio/gramo en rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-joule-gram.html">rad en julio/gramo</a></div></li>
+<li>1 julio/centigramo [J/cg] = 10000000 rad [rd]<div>
+<a href="radiation-absorbed-dose/joule-centigram-to-rad.html">julio/centigramo en rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-joule-centigram.html">rad en julio/centigramo</a></div></li>
+<li>1 julio/miligramo [J/mg] = 100000000 rad [rd]<div>
+<a href="radiation-absorbed-dose/joule-milligram-to-rad.html">julio/miligramo en rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-joule-milligram.html">rad en julio/miligramo</a></div></li>
+<li>1 gris [Gy] = 100 rad [rd]<div>
+<a href="radiation-absorbed-dose/gray-to-rad.html">gris a rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-gray.html">rad a gris</a></div></li>
+<li>1 exaray [EGy] = 1.0E+20 rad [rd]<div>
+<a href="radiation-absorbed-dose/exagray-to-rad.html">exaray a rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-exagray.html">rad a exaray</a></div></li>
+<li>1 petgray [PGy] = 1,0E+17 rad [rd]<div>
+<a href="radiation-absorbed-dose/petagray-to-rad.html">petagray en rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-petagray.html">rad en petagray</a></div></li>
+<li>1 teragray [TGy] = 1,0E+14 rad [rd]<div>
+<a href="radiation-absorbed-dose/teragray-to-rad.html">teragray en rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-teragray.html">rad en teragray</a></div></li>
+<li>1 gigagray [GGy] = 100000000000 rad [rd]<div>
+<a href="radiation-absorbed-dose/gigagray-to-rad.html">gigagray en rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-gigagray.html">rad en gigagray</a></div></li>
+<li>1 megagray [MGy] = 100000000 rad [rd]<div>
+<a href="radiation-absorbed-dose/megagray-to-rad.html">megagray en rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-megagray.html">rad en megagray</a></div></li>
+<li>1 kilogray [kGy] = 100000 rad [rd]<div>
+<a href="radiation-absorbed-dose/kilogray-to-rad.html">kilogray en rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-kilogray.html">rad en kilogray</a></div></li>
+<li>1 hectogray [hGy] = 10000 rad [rd]<div>
+<a href="radiation-absorbed-dose/hectogray-to-rad.html">hectogray en rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-hectogray.html">rad en hectogray</a></div></li>
+<li>1 dekagray [daGy] = 1000 rad [rd]<div>
+<a href="radiation-absorbed-dose/dekagray-to-rad.html">dekagray a rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-dekagray.html">rad a dekagray</a></div></li>
+<li>1 decigray [dGy] = 10 rad [rd]<div>
+<a href="radiation-absorbed-dose/decigray-to-rad.html">decigray a rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-decigray.html">rad a decigray</a></div></li>
+<li>1 centigray [cGy] = 1 rad [rd]<div>
+<a href="radiation-absorbed-dose/centigray-to-rad.html">centigray en rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-centigray.html">rad en centigray</a></div></li>
+<li>1 miligray [mGy] = 0,1 rad [rd]<div>
+<a href="radiation-absorbed-dose/milligray-to-rad.html">miligray en rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-milligray.html">rad en miligray</a></div></li>
+<li>1 microgray [µGy] = 0,0001 rad [rd]<div>
+<a href="radiation-absorbed-dose/microgray-to-rad.html">microgray en rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-microgray.html">rad en microgray</a></div></li>
+<li>1 nanogray [nGy] = 1,0E-7 rad [rd]<div>
+<a href="radiation-absorbed-dose/nanogray-to-rad.html">nanogray en rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-nanogray.html">rad en nanogray</a></div></li>
+<li>1 picogray [pGy] = 1,0E-10 rad [rd]<div>
+<a href="radiation-absorbed-dose/picogray-to-rad.html">picogray en rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-picogray.html">rad en picogray</a></div></li>
+<li>1 femtogris [fGy] = 1,0E-13 rad [rd]<div>
+<a href="radiation-absorbed-dose/femtogray-to-rad.html">femtogray a rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-femtogray.html">rad a femtogray</a></div></li>
+<li>1 attogray [aGy] = 1,0E-16 rad [rd]<div>
+<a href="radiation-absorbed-dose/attogray-to-rad.html">attogray a rad</a> , &nbsp;  <a href="radiation-absorbed-dose/rad-to-attogray.html">rad a attogray</a></div></li></ul>	</div>
+	<div id="right">
+		<div id="rightAdUnit" style="text-align:center;">	<p style="text-align: center;font-size: 13px;">Publicidad</p> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1499277905602809" data-ad-slot="5056649317" data-ad-format="auto" data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script> <br></div>
+<br>
+<div id="othercalc"><div id="octitle">Todos los convertidores</div><div id="occontent"><a href="#" onclick="return showNav('Common Converters')">Convertidores comunes</a><a href="#" onclick="return showNav('Engineering Converters')">Convertidores de ingeniería</a><a href="#" onclick="return showNav('Heat Converters')">Convertidores de calor</a><a href="#" onclick="return showNav('Fluids Converters')">Convertidores de fluidos</a><a href="#" onclick="return showNav('Light Converters')">Convertidores de luz</a><a href="#" onclick="return showNav('Electricity Converters')">Convertidores de electricidad</a><a href="#" onclick="return showNav('Magnetism Converters')">Convertidores de magnetismo</a><a href="#" onclick="return showNav('Radiology Converters')" style="background-color: #eee;color:#0637ef;background-image: url('/images/down-arrow.svg');background-repeat: no-repeat;background-position: right 6px center;">Convertidores de radiología</a><div id="ocsubnav"><a href="/radiation-converter.html">Radiación</a><a href="/radiation-activity-converter.html">Actividad de radiación</a><a href="/radiation-exposure-converter.html">Exposición a la radiación</a><a href="/radiation-absorbed-dose-converter.html">Dosis de radiación absorbida</a></div><a href="/common-unit-systems.html">Sistemas de unidades comunes</a></div></div>
+<script>var navSectionName = "Radiology Converters";</script>	</div>
+</div>
+<div id="clear"></div>
+<div id="footer">
+	<div id="footerin">
+		<div id="footernav"><a href="about-us.html">Sobre nosotros</a> | <a href="about-us.html#terms">Condiciones de uso</a> | <a href="about-us.html#privacy">Política de Privacidad</a> | <a href="sitemap.html">Mapa del sitio</a>  &nbsp; © 2020 - 2023 <a href="index.html">UnitConverter.Vidfom.com</a></div>
+	</div>
+</div>
+<div class='sticky-ads' id='sticky-ads'>
+<div class='sticky-ads-close' onclick='document.getElementById("sticky-ads").style.display="none"'><svg viewbox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'/></svg></div> 
+<div class='sticky-ads-content'> 
+<ins class="adsbygoogle" style="display:block"   
+data-ad-client="ca-pub-1499277905602809" 
+data-ad-slot="5056649317"  
+data-ad-format="auto" 
+data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script>   
+</div></div> 
+</body>
+</html>

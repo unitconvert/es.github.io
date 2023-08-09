@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL List to Multiple XML Sitemaps Converter</title>
+</head>
+<body>
+    <h1>URL List to Multiple XML Sitemaps Converter</h1>
+    
+    <form id="upload-form">
+        <label for="url-file">Upload a text file containing URLs:</label>
+        <input type="file" id="url-file" accept=".txt">
+        <button type="button" onclick="convertToSitemaps()">Convert to Multiple XML Sitemaps</button>
+    </form>
+    
+    <div id="xml-output" style="display: none;">
+        <h2>Generated XML Sitemaps:</h2>
+        <div id="sitemap-links"></div>
+    </div>
+
+    <script>
+        async function convertToSitemaps() {
+            const fileInput = document.getElementById('url-file');
+            const sitemapLinks = document.getElementById('sitemap-links');
+
+            if (fileInput.files.length > 0) {
+                const file = fileInput.files[0];
+                const reader = new FileReader();
+
+                reader.onload = async function(event) {
+                    const urls = event.target.result.split('\n').filter(Boolean);
+
+                    const chunkSize = 10000;
+                    const numSitemaps = Math.ceil(urls.length / chunkSize);
+
+                    for (let i = 0; i < numSitemaps; i++) {
+                        const startIndex = i * chunkSize;
+                        const endIndex = Math.min(startIndex + chunkSize, urls.length);
+                        const chunk = urls.slice(startIndex, endIndex);
+
+                        const xml = generateSitemapXML(chunk);
+                        const sitemapFileName = `sitemap_${i + 1}.xml`;
+
+                        await saveSitemapToFile(xml, sitemapFileName);
+
+                        const sitemapLink = document.createElement('p');
+                        sitemapLink.textContent = `Generated: ${sitemapFileName}`;
+                        sitemapLinks.appendChild(sitemapLink);
+                    }
+                };
+
+                reader.readAsText(file);
+            }
+        }
+
+        function generateSitemapXML(urls) {
+            let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+            xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+
+            for (const url of urls) {
+                xml += '    <url>\n';
+                xml += `        <loc>${url}</loc>\n`;
+                xml += '    </url>\n';
+            }
+
+            xml += '</urlset>';
+            return xml;
+        }
+
+        function saveSitemapToFile(xml, fileName) {
+            const blob = new Blob([xml], { type: 'application/xml' });
+            const url = URL.createObjectURL(blob);
+
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = fileName;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	
+	<title>Convertidor de momento de inercia</title>
+	<meta name="description" content="Free online moment of inertia converter - converts between 14 units of moment of inertia, including kilogram square meter, kilogram square centimeter, kilogram square millimeter, gram square centimeter, etc. Also, explore many other unit converters or learn more about moment of inertia unit conversions.">
+	<link rel="stylesheet" type="text/css" href="/lib/cmtoin.css"> 
+    <link rel="stylesheet" type="text/css" href="/lib/ads.css"> 
+    <script src="/lib/unit1.js" async=""></script> 
+    <meta property="og:locale" content="es"> 
+    <meta property="og:type" content="website"> 
+    <meta property="og:site_name" content="Unit Converter Vidfom.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<div id="google_translate_element" style="display:none;"></div>
+    <script type="text/javascript" src="/lib/element.js"></script>
+	<meta name="google-site-verification" content="Lgok9kGtWHPAaB_O0qHWdtt1hcVyWRwLpeFVzS2AEFY" />
+	<script src="/lib/unit.js" async></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="/lib/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/lib/icon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/lib/icon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div id="headerout">
+	<div id="header">
+		<div id="logo">  <a href="/"> <span class="panelmsg" translate="no"> <font style="color:#0637ef;font-size: 25px;">Unit</font><strong style="color:#000;font-size: 25px;">Converter</strong><font style="color: #807070;font-size: 25px;">.Vidfom.com</font></span></a></div>
+	</div>
+</div>
+<div id="clear"></div>
+<div id="contentout">
+	<div id="content">
+					<img src="../images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+				<div class="topnav"><a href="index.html">Inicio</a> / <a href="engineering-converters.html">Convertidores de Ingeniería</a> / Convertidor de Momento de Inercia</div>
+		<h1>Convertidor de momento de inercia</h1>
+<div id="unquickcalc" style="display:none;"></div>
+
+<div id="ucresult" class="ucresulttext"></div>
+<form>
+<table id="uctable">
+	<tbody><tr>
+		<td class="uccell"><label for="ucfrom">De:</label>
+<br>
+<input type="text" name="ucfrom" class="ucinput" id="ucfrom" onkeyup="ucUpdateResult();" autofocus=""></td>
+		<td class="uccell"><label for="ucto">A:</label>
+<br>
+<input type="text" name="ucto" class="ucinput" id="ucto" style="background-color:#eeeeee;" readonly=""></td>
+	</tr>
+	<tr>
+		<td class="uccell">
+			<select name="ucfromunit" id="ucfromunit" size="14" onchange="ucUpdateResult();" class="ucselect"><option value="kilogram square meter [100]" selected="">kilogramo metro cuadrado</option>
+<option value="kilogram square centimeter [1000000]">kilogramo centimetro cuadrado</option>
+<option value="kilogram square millimeter [100000000]">kilogramo milímetro cuadrado</option>
+<option value="gram square centimeter [1000000000]">gramo centimetro cuadrado</option>
+<option value="gram square millimeter [100000000000]">gramo cuadrado milímetro</option>
+<option value="kilogram-force meter square second [10.19716213]">kilogramo-fuerza metro cuadrado segundo</option>
+<option value="kilogram-force centimeter square second [1019.716213]">kilogramo-fuerza centímetro cuadrado segundo</option>
+<option value="ounce square inch [oz*in^2] [5467474.983]">onza pulgada cuadrada [oz*in^2]</option>
+<option value="ounce-force inch sq. second [14161.19312]">onza-fuerza pulgada sq. segundo</option>
+<option value="pound square foot [lb*ft^2] [2373.0360404232]">libra pie cuadrado [lb*ft^2]</option>
+<option value="pound-force foot sq. second [73.75621419]">libra-fuerza pie cuadrado segundo</option>
+<option value="pound square inch [lb*in^2] [341717.18982094]">libra pulgada cuadrada [lb*in^2]</option>
+<option value="pound-force inch sq. second [885.0745703]">libra-fuerza pulgada sq. segundo</option>
+<option value="slug square foot [slug*ft^2] [73.75621419]">slug pie cuadrado [slug*ft^2]</option></select>
+		</td>
+		<td class="uccell">
+			<select name="uctounit" id="uctounit" size="14" onchange="ucUpdateResult();" class="ucselect">
+
+<option value="kilogram square meter [100]">kilogram square meter</option>
+<option value="kilogram square centimeter [1000000]">kilogram square centimeter</option>
+<option value="kilogram square millimeter [100000000]">kilogram square millimeter</option>
+<option value="gram square centimeter [1000000000]">gram square centimeter</option>
+<option value="gram square millimeter [100000000000]">gram square millimeter</option>
+<option value="kilogram-force meter square second [10.19716213]">kilogram-force meter square second</option>
+<option value="kilogram-force centimeter square second [1019.716213]">kilogram-force centimeter square second</option>
+<option value="ounce square inch [oz*in^2] [5467474.983]">ounce square inch [oz*in^2]</option>
+<option value="ounce-force inch sq. second [14161.19312]">ounce-force inch sq. second</option>
+<option value="pound square foot [lb*ft^2] [2373.0360404232]">pound square foot [lb*ft^2]</option>
+<option value="pound-force foot sq. second [73.75621419]">pound-force foot sq. second</option>
+<option value="pound square inch [lb*in^2] [341717.18982094]">pound square inch [lb*in^2]</option><option value="pound-force inch sq. second [885.0745703]">pound-force inch sq. second</option><option value="slug square foot [slug*ft^2] [73.75621419]">slug square foot [slug*ft^2]</option></select>
+		</td>
+	</tr>
+</tbody></table>
+</form>
+<script>noValidation=0;</script>
+<br>
+<h3>Lista completa de unidades de momento de inercia para conversión</h3>
+<ul class="allunits"><li>kilogramo metro cuadrado</li>
+<li>1 kilogramo centímetro cuadrado = 0.0001 kilogramo metro cuadrado<div>
+<a href="moment-of-inertia/kilogram-square-centimeter-to-kilogram-square-meter.html">kilogramo centímetro cuadrado a kilogramo metro cuadrado</a> , &nbsp;  <a href="moment-of-inertia/kilogram-square-meter-to-kilogram-square-centimeter.html">kilogramo metro cuadrado a kilogramo centímetro cuadrado</a></div></li>
+<li>1 kilogramo milímetro cuadrado = 1.0E-6 kilogramo metro cuadrado<div>
+<a href="moment-of-inertia/kilogram-square-millimeter-to-kilogram-square-meter.html">kilogramo milímetro cuadrado a kilogramo metro cuadrado</a> , &nbsp;  <a href="moment-of-inertia/kilogram-square-meter-to-kilogram-square-millimeter.html">kilogramo metro cuadrado a kilogramo milímetro cuadrado</a></div></li>
+<li>1 gramo centímetro cuadrado = 1.0E-7 kilogramo metro cuadrado<div>
+<a href="moment-of-inertia/gram-square-centimeter-to-kilogram-square-meter.html">gramo centímetro cuadrado a kilogramo metro cuadrado</a> , &nbsp;  <a href="moment-of-inertia/kilogram-square-meter-to-gram-square-centimeter.html">kilogramo metro cuadrado a gramo centímetro cuadrado</a></div></li>
+<li>1 gramo milímetro cuadrado = 1.0E-9 kilogramo metro cuadrado<div>
+<a href="moment-of-inertia/gram-square-millimeter-to-kilogram-square-meter.html">gramo milímetro cuadrado a kilogramo metro cuadrado</a> , &nbsp;  <a href="moment-of-inertia/kilogram-square-meter-to-gram-square-millimeter.html">kilogramo metro cuadrado a gramo milímetro cuadrado</a></div></li>
+<li>1 kilogramo-fuerza metro cuadrado segundo = 9.8066499998 kilogramo metro cuadrado<div>
+<a href="moment-of-inertia/kilogram-force-meter-square-second-to-kilogram-square-meter.html">kilogramo-fuerza metro cuadrado segundo a kilogramo metro cuadrado</a> , &nbsp;  <a href="moment-of-inertia/kilogram-square-meter-to-kilogram-force-meter-square-second.html">kilogramo metro cuadrado a kilogramo fuerza metro cuadrado segundo</a></div></li>
+<li>1 kilogramo-fuerza centímetro segundo cuadrado = 0.0980665 kilogramo metro cuadrado<div>
+<a href="moment-of-inertia/kilogram-force-centimeter-square-second-to-kilogram-square-meter.html">kilogramo-fuerza centímetro cuadrado segundo a kilogramo metro cuadrado</a> , &nbsp;  <a href="moment-of-inertia/kilogram-square-meter-to-kilogram-force-centimeter-square-second.html">kilogramo metro cuadrado a kilogramo-fuerza centímetro cuadrado segundo</a></div></li>
+<li>1 onza pulgada cuadrada [oz*in^2] = 1.829E-5 kilogramo metro cuadrado<div>
+<a href="moment-of-inertia/ounce-square-inch-to-kilogram-square-meter.html">onza pulgada cuadrada a kilogramo metro cuadrado</a> , &nbsp;  <a href="moment-of-inertia/kilogram-square-meter-to-ounce-square-inch.html">kilogramo metro cuadrado a onza pulgada cuadrada</a></div></li>
+<li>1 onza-fuerza pulgada cuadrada segundo = 0.0070615519 kilogramo metro cuadrado<div>
+<a href="moment-of-inertia/ounce-force-inch-sq-second-to-kilogram-square-meter.html">onza-fuerza pulgada segundo a kilogramo metro cuadrado</a> , &nbsp;  <a href="moment-of-inertia/kilogram-square-meter-to-ounce-force-inch-sq-second.html">kilogramo metro cuadrado a onza-fuerza pulgada segundo</a></div></li>
+<li>1 libra pie cuadrado [lb*ft^2] = 0,0421401101 kilogramo metro cuadrado<div>
+<a href="moment-of-inertia/pound-square-foot-to-kilogram-square-meter.html">libra pie cuadrado a kilogramo metro cuadrado</a> , &nbsp;  <a href="moment-of-inertia/kilogram-square-meter-to-pound-square-foot.html">kilogramo metro cuadrado a libra pie cuadrado</a></div></li>
+<li>1 libra fuerza pie segundo cuadrado = 1.3558179619 kilogramo metro cuadrado<div>
+<a href="moment-of-inertia/pound-force-foot-sq-second-to-kilogram-square-meter.html">libra fuerza pie segundo cuadrado a kilogramo metro cuadrado</a> , &nbsp;  <a href="moment-of-inertia/kilogram-square-meter-to-pound-force-foot-sq-second.html">kilogramo metro cuadrado a libra fuerza pie segundo cuadrado</a></div></li>
+<li>1 libra pulgada cuadrada [lb*in^2] = 0.0002926397 kilogramo metro cuadrado<div>
+<a href="moment-of-inertia/pound-square-inch-to-kilogram-square-meter.html">libra pulgada cuadrada a kilogramo metro cuadrado</a> , &nbsp;  <a href="moment-of-inertia/kilogram-square-meter-to-pound-square-inch.html">kilogramo metro cuadrado a libra pulgada cuadrada</a></div></li>
+<li>1 libra fuerza pulgada cuadrada segundo = 0.1129848302 kilogramo metro cuadrado<div>
+<a href="moment-of-inertia/pound-force-inch-sq-second-to-kilogram-square-meter.html">libra fuerza pulgada segundo cuadrado a kilogramo metro cuadrado</a> , &nbsp;  <a href="moment-of-inertia/kilogram-square-meter-to-pound-force-inch-sq-second.html">kilogramo metro cuadrado a libra fuerza pulgada segundo cuadrado</a></div></li>
+<li>1 slug pie cuadrado [slug*ft^2] = 1,3558179619 kilogramo metro cuadrado<div>
+<a href="moment-of-inertia/slug-square-foot-to-kilogram-square-meter.html">slug pie cuadrado a kilogramo metro cuadrado</a> , &nbsp;  <a href="moment-of-inertia/kilogram-square-meter-to-slug-square-foot.html">kilogramo metro cuadrado a slug pie cuadrado</a></div></li></ul>	</div>
+	<div id="right">
+		<div id="rightAdUnit" style="text-align:center;">	<p style="text-align: center;font-size: 13px;">Publicidad</p> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1499277905602809" data-ad-slot="5056649317" data-ad-format="auto" data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script> <br></div>
+<br>
+<div id="othercalc"><div id="octitle">Todos los convertidores</div><div id="occontent"><a href="#" onclick="return showNav('Common Converters')">Convertidores comunes</a><a href="#" onclick="return showNav('Engineering Converters')" style="background-color: #eee;color:#0637ef;background-image: url('/images/down-arrow.svg');background-repeat: no-repeat;background-position: right 6px center;">Convertidores de ingeniería</a><div id="ocsubnav"><a href="/volume-converter.html">Volumen</a><a href="/temperature-converter.html">Temperatura</a><a href="/area-converter.html">Área</a><a href="/pressure-converter.html">Presión</a><a href="/energy-converter.html">Energía</a><a href="/power-converter.html">Fuerza</a><a href="/force-converter.html">Fuerza</a><a href="/time-converter.html">Tiempo</a><a href="/speed-converter.html">Velocidad</a><a href="/angle-converter.html">Ángulo</a><a href="/fuel-consumption-converter.html">El consumo de combustible</a><a href="/numbers-converter.html">Números</a><a href="/data-storage-converter.html">Almacenamiento de datos</a><a href="/volume-dry-converter.html">Volumen - Seco</a><a href="/index.html">Hogar</a><a href="/velocity-angular-converter.html">Velocidad - Angular</a><a href="/acceleration-converter.html">Aceleración</a><a href="/acceleration-angular-converter.html">Aceleración - Angular</a><a href="/density-converter.html">Densidad</a><a href="/specific-volume-converter.html">Volumen específico</a><a href="/moment-of-inertia-converter.html">Momento de inercia</a><a href="/moment-of-force-converter.html">Momento de fuerza</a><a href="/torque-converter.html">Esfuerzo de torsión</a></div><a href="#" onclick="return showNav('Heat Converters')">Convertidores de calor</a><a href="#" onclick="return showNav('Fluids Converters')">Convertidores de fluidos</a><a href="#" onclick="return showNav('Light Converters')">Convertidores de luz</a><a href="#" onclick="return showNav('Electricity Converters')">Convertidores de electricidad</a><a href="#" onclick="return showNav('Magnetism Converters')">Convertidores de magnetismo</a><a href="#" onclick="return showNav('Radiology Converters')">Convertidores de radiología</a><a href="/common-unit-systems.html">Sistemas de unidades comunes</a></div></div>
+<script>var navSectionName = "Engineering Converters";</script>	</div>
+</div>
+<div id="clear"></div>
+<div id="footer">
+	<div id="footerin">
+		<div id="footernav"><a href="about-us.html">Sobre nosotros</a> | <a href="about-us.html#terms">Condiciones de uso</a> | <a href="about-us.html#privacy">Política de Privacidad</a> | <a href="sitemap.html">Mapa del sitio</a>  &nbsp; © 2020 - 2023 <a href="index.html">UnitConverter.Vidfom.com</a></div>
+	</div>
+</div>
+<div class='sticky-ads' id='sticky-ads'>
+<div class='sticky-ads-close' onclick='document.getElementById("sticky-ads").style.display="none"'><svg viewbox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'/></svg></div> 
+<div class='sticky-ads-content'> 
+<ins class="adsbygoogle" style="display:block"   
+data-ad-client="ca-pub-1499277905602809" 
+data-ad-slot="5056649317"  
+data-ad-format="auto" 
+data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script>   
+</div></div> 
+</body>
+</html>

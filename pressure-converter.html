@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	
+	<title>Convertidor de presión</title>
+	<meta name="description" content="Free online pressure converter - converts between 53 units of pressure, including pascal [Pa], kilopascal [kPa], bar, psi [psi], etc. Also, explore many other unit converters or learn more about pressure unit conversions.">
+	<link rel="stylesheet" type="text/css" href="/lib/cmtoin.css"> 
+    <link rel="stylesheet" type="text/css" href="/lib/ads.css"> 
+    <script src="/lib/unit1.js" async=""></script> 
+    <meta property="og:locale" content="es"> 
+    <meta property="og:type" content="website"> 
+    <meta property="og:site_name" content="Unit Converter Vidfom.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<div id="google_translate_element" style="display:none;"></div>
+    <script type="text/javascript" src="/lib/element.js"></script>
+	<meta name="google-site-verification" content="Lgok9kGtWHPAaB_O0qHWdtt1hcVyWRwLpeFVzS2AEFY" />
+	<script src="/lib/unit.js" async></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="/lib/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/lib/icon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/lib/icon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div id="headerout">
+	<div id="header">
+		<div id="logo">  <a href="/"> <span class="panelmsg" translate="no"> <font style="color:#0637ef;font-size: 25px;">Unit</font><strong style="color:#000;font-size: 25px;">Converter</strong><font style="color: #807070;font-size: 25px;">.Vidfom.com</font></span></a></div>
+	</div>
+</div>
+<div id="clear"></div>
+<div id="contentout">
+	<div id="content">
+					<img src="../images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+				<div class="topnav"><a href="index.html">Inicio</a> / <a href="common-converters.html">Convertidores comunes</a> / Convertidor de presión</div>
+		<h1>Convertidor de presión</h1>
+<div id="unquickcalc" style="display:none;"></div>
+
+<div id="ucresult" class="ucresulttext"></div>
+<form>
+<table id="uctable">
+	<tbody><tr>
+		<td class="uccell"><label for="ucfrom">De:</label>
+<br>
+<input type="text" name="ucfrom" class="ucinput" id="ucfrom" onkeyup="ucUpdateResult();" autofocus=""></td>
+		<td class="uccell"><label for="ucto">A:</label>
+<br>
+<input type="text" name="ucto" class="ucinput" id="ucto" style="background-color:#eeeeee;" readonly=""></td>
+	</tr>
+	<tr>
+		<td class="uccell">
+			<select name="ucfromunit" id="ucfromunit" size="15" onchange="ucUpdateResult();" class="ucselect"><option value="pascal [Pa] [1.0E+18]" selected="">pascual [Pa]</option>
+<option value="kilopascal [kPa] [1.0E+15]">kilopascal [kPa]</option>
+<option value="bar [10000000000000]">bar</option>
+<option value="psi [psi] [1.4503773773E+14]">psi [psi]</option>
+<option value="ksi [ksi] [145037737730]">ksi [ksi]</option>
+<option value="Standard atmosphere [atm] [9869232667160.1]">Atmósfera estándar [atm]</option>
+<option value="exapascal [EPa] [1]">exapascal [EPa]</option>
+<option value="petapascal [PPa] [1000]">petapascal [PPa]</option>
+<option value="terapascal [TPa] [1000000]">terapascal [TPa]</option>
+<option value="gigapascal [GPa] [1000000000]">gigapascal [GPa]</option>
+<option value="megapascal [MPa] [1000000000000]">megapascal [MPa]</option>
+<option value="hectopascal [hPa] [1.0E+16]">hectopascal [hPa]</option>
+<option value="dekapascal [daPa] [1.0E+17]">dekapascal [daPa]</option>
+<option value="decipascal [dPa] [1.0E+19]">decipascal [dPa]</option>
+<option value="centipascal [cPa] [1.0E+20]">centipascal [cPa]</option>
+<option value="millipascal [mPa] [1.0E+21]">milipascal [mPa]</option>
+<option value="micropascal [µPa] [1.0E+24]">micropascal [µPa]</option>
+<option value="nanopascal [nPa] [1.0E+27]">nanopascal [nPa]</option>
+<option value="picopascal [pPa] [1.0E+30]">picopascal [pPa]</option>
+<option value="femtopascal [fPa] [1.0E+33]">femtopascal [fPa]</option>
+<option value="attopascal [aPa] [1.0E+36]">attopascal [aPa]</option>
+<option value="newton/square meter [1.0E+18]">newton/metro cuadrado</option>
+<option value="newton/square centimeter [1.0E+14]">newton/centímetro cuadrado</option>
+<option value="newton/square millimeter [1000000000000]">newton/milímetro cuadrado</option>
+<option value="kilonewton/square meter [1.0E+15]">kilonewton/metro cuadrado</option>
+<option value="millibar [mbar] [1.0E+16]">milibar [mbar]</option>
+<option value="microbar [µbar] [1.0E+19]">microbar [µbar]</option>
+<option value="dyne/square centimeter [1.0E+19]">dina/centímetro cuadrado</option>
+<option value="kilogram-force/square meter [1.0197162129779E+17]">kilogramo-fuerza/metro cuadrado</option>
+<option value="kilogram-force/sq. cm [10197162129779]">kilogramo-fuerza/sq. cm</option>
+<option value="kilogram-force/sq. millimeter [101971621297.79]">kilogramo-fuerza/sq. milímetro</option>
+<option value="gram-force/sq. centimeter [1.0197162129779E+16]">gramo-fuerza/sq. centímetro</option>
+<option value="ton-force (short)/sq. foot [10442717116574]">tonelada-fuerza (corta)/sq. pie</option>
+<option value="ton-force (short)/sq. inch [72518868865.1]">tonelada-fuerza (corta)/sq. pulgada</option>
+<option value="ton-force (long)/square foot [9323854568370.6]">tonelada-fuerza (larga)/pie cuadrado</option>
+<option value="ton-force (long)/square inch [64748990058.129]">tonelada-fuerza (larga)/pulgada cuadrada</option>
+<option value="kip-force/square inch [145037737730]">kip-fuerza/pulgada cuadrada</option>
+<option value="pound-force/square foot [2.088543423312E+16]">libra-fuerza/pie cuadrado</option>
+<option value="pound-force/square inch [1.4503773773E+14]">libra-fuerza/pulgada cuadrada</option>
+<option value="poundal/square foot [6.7196897513951E+17]">libras/pie cuadrado</option>
+<option value="torr [Torr] [7.50061682704E+15]">torr [Torr]</option>
+<option value="centimeter mercury (0°C) [7.5006375541921E+14]">centímetro de mercurio (0°C)</option>
+<option value="millimeter mercury (0°C) [7.5006375541921E+15]">milímetro de mercurio (0°C)</option>
+<option value="inch mercury (32°F) [inHg] [2.9530058646696E+14]">pulgada de mercurio (32°F) [inHg]</option>
+<option value="inch mercury (60°F) [inHg] [2.9613397100848E+14]">pulgada de mercurio (60°F) [inHg]</option>
+<option value="centimeter water (4°C) [1.0197442889221E+16]">centímetro de agua (4°C)</option>
+<option value="millimeter water (4°C) [1.0197442889221E+17]">agua milimétrica (4°C)</option>
+<option value="inch water (4°C) [inAq] [4.0147421331128E+15]">pulgada de agua (4°C) [inAq]</option>
+<option value="foot water (4°C) [ftAq] [3.3456229215318E+14]">pie de agua (4°C) [ftAq]</option>
+<option value="inch water (60°F) [inAq] [4.0185980718766E+15]">pulgada de agua (60°F) [inAq]</option>
+<option value="foot water (60°F) [ftAq] [3.3488317265639E+14]">pie de agua (60°F) [ftAq]</option>
+<option value="atmosphere technical [at] [10197162129779]">ambiente técnico [en]</option></select>
+		</td>
+		<td class="uccell">
+			<select name="uctounit" id="uctounit" size="15" onchange="ucUpdateResult();" class="ucselect">
+
+<option value="pascal [Pa] [1.0E+18]">pascal [Pa]</option>
+<option value="kilopascal [kPa] [1.0E+15]">kilopascal [kPa]</option>
+<option value="bar [10000000000000]">bar</option>
+<option value="psi [psi] [1.4503773773E+14]">psi [psi]</option>
+<option value="ksi [ksi] [145037737730]">ksi [ksi]</option>
+<option value="Standard atmosphere [atm] [9869232667160.1]">Standard atmosphere [atm]</option>
+<option value="exapascal [EPa] [1]">exapascal [EPa]</option>
+<option value="petapascal [PPa] [1000]">petapascal [PPa]</option>
+<option value="terapascal [TPa] [1000000]">terapascal [TPa]</option>
+<option value="gigapascal [GPa] [1000000000]">gigapascal [GPa]</option>
+<option value="megapascal [MPa] [1000000000000]">megapascal [MPa]</option>
+<option value="hectopascal [hPa] [1.0E+16]">hectopascal [hPa]</option>
+<option value="dekapascal [daPa] [1.0E+17]">dekapascal [daPa]</option>
+<option value="decipascal [dPa] [1.0E+19]">decipascal [dPa]</option>
+<option value="centipascal [cPa] [1.0E+20]">centipascal [cPa]</option>
+<option value="millipascal [mPa] [1.0E+21]">millipascal [mPa]</option>
+<option value="micropascal [µPa] [1.0E+24]">micropascal [µPa]</option>
+<option value="nanopascal [nPa] [1.0E+27]">nanopascal [nPa]</option>
+<option value="picopascal [pPa] [1.0E+30]">picopascal [pPa]</option>
+<option value="femtopascal [fPa] [1.0E+33]">femtopascal [fPa]</option>
+<option value="attopascal [aPa] [1.0E+36]">attopascal [aPa]</option>
+<option value="newton/square meter [1.0E+18]">newton/square meter</option>
+<option value="newton/square centimeter [1.0E+14]">newton/square centimeter</option>
+<option value="newton/square millimeter [1000000000000]">newton/square millimeter</option>
+<option value="kilonewton/square meter [1.0E+15]">kilonewton/square meter</option>
+<option value="millibar [mbar] [1.0E+16]">millibar [mbar]</option>
+<option value="microbar [µbar] [1.0E+19]">microbar [µbar]</option>
+<option value="dyne/square centimeter [1.0E+19]">dyne/square centimeter</option>
+<option value="kilogram-force/square meter [1.0197162129779E+17]">kilogram-force/square meter</option>
+<option value="kilogram-force/sq. cm [10197162129779]">kilogram-force/sq. cm</option>
+<option value="kilogram-force/sq. millimeter [101971621297.79]">kilogram-force/sq. millimeter</option>
+<option value="gram-force/sq. centimeter [1.0197162129779E+16]">gram-force/sq. centimeter</option>
+<option value="ton-force (short)/sq. foot [10442717116574]">ton-force (short)/sq. foot</option>
+<option value="ton-force (short)/sq. inch [72518868865.1]">ton-force (short)/sq. inch</option>
+<option value="ton-force (long)/square foot [9323854568370.6]">ton-force (long)/square foot</option>
+<option value="ton-force (long)/square inch [64748990058.129]">ton-force (long)/square inch</option>
+<option value="kip-force/square inch [145037737730]">kip-force/square inch</option>
+<option value="pound-force/square foot [2.088543423312E+16]">pound-force/square foot</option>
+<option value="pound-force/square inch [1.4503773773E+14]">pound-force/square inch</option>
+<option value="poundal/square foot [6.7196897513951E+17]">poundal/square foot</option>
+<option value="torr [Torr] [7.50061682704E+15]">torr [Torr]</option>
+<option value="centimeter mercury (0°C) [7.5006375541921E+14]">centimeter mercury (0°C)</option>
+<option value="millimeter mercury (0°C) [7.5006375541921E+15]">millimeter mercury (0°C)</option>
+<option value="inch mercury (32°F) [inHg] [2.9530058646696E+14]">inch mercury (32°F) [inHg]</option>
+<option value="inch mercury (60°F) [inHg] [2.9613397100848E+14]">inch mercury (60°F) [inHg]</option>
+<option value="centimeter water (4°C) [1.0197442889221E+16]">centimeter water (4°C)</option>
+<option value="millimeter water (4°C) [1.0197442889221E+17]">millimeter water (4°C)</option>
+<option value="inch water (4°C) [inAq] [4.0147421331128E+15]">inch water (4°C) [inAq]</option>
+<option value="foot water (4°C) [ftAq] [3.3456229215318E+14]">foot water (4°C) [ftAq]</option>
+<option value="inch water (60°F) [inAq] [4.0185980718766E+15]">inch water (60°F) [inAq]</option><option value="foot water (60°F) [ftAq] [3.3488317265639E+14]">foot water (60°F) [ftAq]</option><option value="atmosphere technical [at] [10197162129779]">atmosphere technical [at]</option></select>
+		</td>
+	</tr>
+</tbody></table>
+</form>
+<script>noValidation=0;</script>
+<br>
+<h3>Conversiones de unidades de presión populares</h3>
+<div id="toother"><div>
+<a href="pressure/bar-to-psi.html">bar a psi</a></div>
+<div>
+<a href="pressure/psi-to-bar.html">psi a bar</a></div>
+<div>
+<a href="pressure/kpa-to-psi.html">kpa en psi</a></div>
+<div>
+<a href="pressure/psi-to-kpa.html">psi a kpa</a></div></div>
+<br>
+<h3>Lista completa de unidades de presión para conversión</h3>
+<ul class="allunits"><li>pascual [Pa]</li>
+<li>1 kilopascal [kPa] = 1000 pascal [Pa]<div>
+<a href="pressure/kilopascal-to-pascal.html">kilopascal a pascal</a> , &nbsp;  <a href="pressure/pascal-to-kilopascal.html">pascal a kilopascal</a></div></li>
+<li>1 bar = 100000 pascales [Pa]<div>
+<a href="pressure/bar-to-pascal.html">bar to pascal</a>, &nbsp; <a href="pressure/pascal-to-bar.html">pascal to bar</a></div></li>
+<li>1 psi [psi] = 6894.7572931783 pascal [Pa]<div>
+<a href="pressure/psi-to-pascal.html">psi to pascal</a>, &nbsp; <a href="pressure/pascal-to-psi.html">pascal to psi</a></div></li>
+<li>1 ksi [ksi] = 6894757.2931783 pascal [Pa]<div>
+<a href="pressure/ksi-to-pascal.html">ksi to pascal</a>, &nbsp; <a href="pressure/pascal-to-ksi.html">pascal to ksi</a></div></li>
+<li>1 Standard atmosphere [atm] = 101325 pascal [Pa]<div>
+<a href="pressure/standard-atmosphere-to-pascal.html">Standard atmosphere to pascal</a>, &nbsp; <a href="pressure/pascal-to-standard-atmosphere.html">pascal to Standard atmosphere</a></div></li>
+<li>1 exapascal [EPa] = 1.0E+18 pascal [Pa]<div>
+<a href="pressure/exapascal-to-pascal.html">exapascal to pascal</a>, &nbsp; <a href="pressure/pascal-to-exapascal.html">pascal to exapascal</a></div></li>
+<li>1 petapascal [PPa] = 1.0E+15 pascal [Pa]<div>
+<a href="pressure/petapascal-to-pascal.html">petapascal to pascal</a>, &nbsp; <a href="pressure/pascal-to-petapascal.html">pascal to petapascal</a></div></li>
+<li>1 terapascal [TPa] = 1000000000000 pascal [Pa]<div>
+<a href="pressure/terapascal-to-pascal.html">terapascal to pascal</a>, &nbsp; <a href="pressure/pascal-to-terapascal.html">pascal to terapascal</a></div></li>
+<li>1 gigapascal [GPa] = 1000000000 pascal [Pa]<div>
+<a href="pressure/gigapascal-to-pascal.html">gigapascal to pascal</a>, &nbsp; <a href="pressure/pascal-to-gigapascal.html">pascal to gigapascal</a></div></li>
+<li>1 megapascal [MPa] = 1000000 pascal [Pa]<div>
+<a href="pressure/megapascal-to-pascal.html">megapascal to pascal</a>, &nbsp; <a href="pressure/pascal-to-megapascal.html">pascal to megapascal</a></div></li>
+<li>1 hectopascal [hPa] = 100 pascal [Pa]<div>
+<a href="pressure/hectopascal-to-pascal.html">hectopascal to pascal</a>, &nbsp; <a href="pressure/pascal-to-hectopascal.html">pascal to hectopascal</a></div></li>
+<li>1 dekapascal [daPa] = 10 pascal [Pa]<div>
+<a href="pressure/dekapascal-to-pascal.html">dekapascal to pascal</a>, &nbsp; <a href="pressure/pascal-to-dekapascal.html">pascal to dekapascal</a></div></li>
+<li>1 decipascal [dPa] = 0.1 pascal [Pa]<div>
+<a href="pressure/decipascal-to-pascal.html">decipascal to pascal</a>, &nbsp; <a href="pressure/pascal-to-decipascal.html">pascal to decipascal</a></div></li>
+<li>1 centipascal [cPa] = 0.01 pascal [Pa]<div>
+<a href="pressure/centipascal-to-pascal.html">centipascal to pascal</a>, &nbsp; <a href="pressure/pascal-to-centipascal.html">pascal to centipascal</a></div></li>
+<li>1 millipascal [mPa] = 0.001 pascal [Pa]<div>
+<a href="pressure/millipascal-to-pascal.html">millipascal to pascal</a>, &nbsp; <a href="pressure/pascal-to-millipascal.html">pascal to millipascal</a></div></li>
+<li>1 micropascal [µPa] = 1.0E-6 pascal [Pa]<div>
+<a href="pressure/micropascal-to-pascal.html">micropascal to pascal</a>, &nbsp; <a href="pressure/pascal-to-micropascal.html">pascal to micropascal</a></div></li>
+<li>1 nanopascal [nPa] = 1.0E-9 pascal [Pa]<div>
+<a href="pressure/nanopascal-to-pascal.html">nanopascal to pascal</a>, &nbsp; <a href="pressure/pascal-to-nanopascal.html">pascal to nanopascal</a></div></li>
+<li>1 picopascal [pPa] = 1.0E-12 pascal [Pa]<div>
+<a href="pressure/picopascal-to-pascal.html">picopascal to pascal</a>, &nbsp; <a href="pressure/pascal-to-picopascal.html">pascal to picopascal</a></div></li>
+<li>1 femtopascal [fPa] = 1.0E-15 pascal [Pa]<div>
+<a href="pressure/femtopascal-to-pascal.html">femtopascal to pascal</a>, &nbsp; <a href="pressure/pascal-to-femtopascal.html">pascal to femtopascal</a></div></li>
+<li>1 attopascal [aPa] = 1.0E-18 pascal [Pa]<div>
+<a href="pressure/attopascal-to-pascal.html">attopascal to pascal</a>, &nbsp; <a href="pressure/pascal-to-attopascal.html">pascal to attopascal</a></div></li>
+<li>1 newton/square meter = 1 pascal [Pa]<div>
+<a href="pressure/newton-square-meter-to-pascal.html">newton/square meter to pascal</a>, &nbsp; <a href="pressure/pascal-to-newton-square-meter.html">pascal to newton/square meter</a></div></li>
+<li>1 newton/square centimeter = 10000 pascal [Pa]<div>
+<a href="pressure/newton-square-centimeter-to-pascal.html">newton/square centimeter to pascal</a>, &nbsp; <a href="pressure/pascal-to-newton-square-centimeter.html">pascal to newton/square centimeter</a></div></li>
+<li>1 newton/square millimeter = 1000000 pascal [Pa]<div>
+<a href="pressure/newton-square-millimeter-to-pascal.html">newton/square millimeter to pascal</a>, &nbsp; <a href="pressure/pascal-to-newton-square-millimeter.html">pascal to newton/square millimeter</a></div></li>
+<li>1 kilonewton/square meter = 1000 pascal [Pa]<div>
+<a href="pressure/kilonewton-square-meter-to-pascal.html">kilonewton/square meter to pascal</a>, &nbsp; <a href="pressure/pascal-to-kilonewton-square-meter.html">pascal to kilonewton/square meter</a></div></li>
+<li>1 millibar [mbar] = 100 pascal [Pa]<div>
+<a href="pressure/millibar-to-pascal.html">millibar to pascal</a>, &nbsp; <a href="pressure/pascal-to-millibar.html">pascal to millibar</a></div></li>
+<li>1 microbar [µbar] = 0.1 pascal [Pa]<div>
+<a href="pressure/microbar-to-pascal.html">microbar to pascal</a>, &nbsp; <a href="pressure/pascal-to-microbar.html">pascal to microbar</a></div></li>
+<li>1 dyne/square centimeter = 0.1 pascal [Pa]<div>
+<a href="pressure/dyne-square-centimeter-to-pascal.html">dyne/square centimeter to pascal</a>, &nbsp; <a href="pressure/pascal-to-dyne-square-centimeter.html">pascal to dyne/square centimeter</a></div></li>
+<li>1 kilogram-force/square meter = 9.80665 pascal [Pa]<div>
+<a href="pressure/kilogram-force-square-meter-to-pascal.html">kilogram-force/square meter to pascal</a>, &nbsp; <a href="pressure/pascal-to-kilogram-force-square-meter.html">pascal to kilogram-force/square meter</a></div></li>
+<li>1 kilogram-force/sq. cm = 98066.5 pascal [Pa]<div>
+<a href="pressure/kilogram-force-sq-cm-to-pascal.html">kilogram-force/sq. cm to pascal</a>, &nbsp; <a href="pressure/pascal-to-kilogram-force-sq-cm.html">pascal to kilogram-force/sq. cm</a></div></li>
+<li>1 kilogram-force/sq. millimeter = 9806650 pascal [Pa]<div>
+<a href="pressure/kilogram-force-sq-millimeter-to-pascal.html">kilogram-force/sq. millimeter to pascal</a>, &nbsp; <a href="pressure/pascal-to-kilogram-force-sq-millimeter.html">pascal to kilogram-force/sq. millimeter</a></div></li>
+<li>1 gram-force/sq. centimeter = 98.0665 pascal [Pa]<div>
+<a href="pressure/gram-force-sq-centimeter-to-pascal.html">gram-force/sq. centimeter to pascal</a>, &nbsp; <a href="pressure/pascal-to-gram-force-sq-centimeter.html">pascal to gram-force/sq. centimeter</a></div></li>
+<li>1 ton-force (short)/sq. foot = 95760.517960678 pascal [Pa]<div>
+<a href="pressure/ton-force-short-sq-foot-to-pascal.html">ton-force (short)/sq. foot to pascal</a>, &nbsp; <a href="pressure/pascal-to-ton-force-short-sq-foot.html">pascal to ton-force (short)/sq. foot</a></div></li>
+<li>1 ton-force (short)/sq. inch = 13789514.586338 pascal [Pa]<div>
+<a href="pressure/ton-force-short-sq-inch-to-pascal.html">ton-force (short)/sq. inch to pascal</a>, &nbsp; <a href="pressure/pascal-to-ton-force-short-sq-inch.html">pascal to ton-force (short)/sq. inch</a></div></li>
+<li>1 tonelada-fuerza (largo)/pie cuadrado = 107251.78011595 pascal [Pa]<div>
+<a href="pressure/ton-force-long-square-foot-to-pascal.html">tonelada-fuerza (larga)/pie cuadrado a pascal</a> , &nbsp;  <a href="pressure/pascal-to-ton-force-long-square-foot.html">pascal a tonelada-fuerza (larga)/pie cuadrado</a></div></li>
+<li>1 tonelada-fuerza (larga)/pulgada cuadrada = 15444256.336697 pascal [Pa]<div>
+<a href="pressure/ton-force-long-square-inch-to-pascal.html">tonelada-fuerza (larga)/pulgada cuadrada a pascal</a> , &nbsp;  <a href="pressure/pascal-to-ton-force-long-square-inch.html">pascal a tonelada-fuerza (larga)/pulgada cuadrada</a></div></li>
+<li>1 kip-fuerza/pulgada cuadrada = 6894757.2931783 pascal [Pa]<div>
+<a href="pressure/kip-force-square-inch-to-pascal.html">kip-fuerza/pulgada cuadrada a pascal</a> , &nbsp;  <a href="pressure/pascal-to-kip-force-square-inch.html">pascal a kip-fuerza/pulgada cuadrada</a></div></li>
+<li>1 libra-fuerza/pie cuadrado = 47,8802589804 pascal [Pa]<div>
+<a href="pressure/pound-force-square-foot-to-pascal.html">libra fuerza/pie cuadrado a pascal</a> , &nbsp;  <a href="pressure/pascal-to-pound-force-square-foot.html">pascal a libra fuerza/pie cuadrado</a></div></li>
+<li>1 libra-fuerza/pulgada cuadrada = 6894.7572931783 pascal [Pa]<div>
+<a href="pressure/pound-force-square-inch-to-pascal.html">libra fuerza/pulgada cuadrada a pascal</a> , &nbsp;  <a href="pressure/pascal-to-pound-force-square-inch.html">pascal a libra fuerza/pulgada cuadrada</a></div></li>
+<li>1 libra/pie cuadrado = 1,4881639436 pascal [Pa]<div>
+<a href="pressure/poundal-square-foot-to-pascal.html">poundal/pie cuadrado a pascal</a> , &nbsp;  <a href="pressure/pascal-to-poundal-square-foot.html">pascal a poundal/pie cuadrado</a></div></li>
+<li>1 torr [Torr] = 133,3223684211 pascales [Pa]<div>
+<a href="pressure/torr-to-pascal.html">torr a pascal</a> , &nbsp;  <a href="pressure/pascal-to-torr.html">pascal a torr</a></div></li>
+<li>1 centímetro de mercurio (0°C) = 1333,22 pascal [Pa]<div>
+<a href="pressure/centimeter-mercury-0-176-c-to-pascal.html">centímetro de mercurio (0°C) a pascal</a> , &nbsp;  <a href="pressure/pascal-to-centimeter-mercury-0-176-c.html">pascal a centímetro de mercurio (0°C)</a></div></li>
+<li>1 milímetro mercurio (0°C) = 133,322 pascal [Pa]<div>
+<a href="pressure/millimeter-mercury-0-176-c-to-pascal.html">milímetro mercurio (0°C) a pascal</a> , &nbsp;  <a href="pressure/pascal-to-millimeter-mercury-0-176-c.html">pascal a milímetro mercurio (0°C)</a></div></li>
+<li>1 pulgada de mercurio (32°F) [inHg] = 3386.38 pascal [Pa]<div>
+<a href="pressure/inch-mercury-32-176-f-to-pascal.html">pulgada de mercurio (32°F) a pascal</a> , &nbsp;  <a href="pressure/pascal-to-inch-mercury-32-176-f.html">pascal a pulgada de mercurio (32°F)</a></div></li>
+<li>1 pulgada de mercurio (60°F) [inHg] = 3376.85 pascal [Pa]<div>
+<a href="pressure/inch-mercury-60-176-f-to-pascal.html">pulgada de mercurio (60°F) a pascal</a> , &nbsp;  <a href="pressure/pascal-to-inch-mercury-60-176-f.html">pascal a pulgada de mercurio (60°F)</a></div></li>
+<li>1 centímetro de agua (4°C) = 98,0638 pascal [Pa]<div>
+<a href="pressure/centimeter-water-4-176-c-to-pascal.html">centímetro de agua (4°C) a pascal</a> , &nbsp;  <a href="pressure/pascal-to-centimeter-water-4-176-c.html">pascal a centímetro de agua (4°C)</a></div></li>
+<li>1 milímetro de agua (4°C) = 9,80638 pascal [Pa]<div>
+<a href="pressure/millimeter-water-4-176-c-to-pascal.html">milímetro de agua (4°C) a pascal</a> , &nbsp;  <a href="pressure/pascal-to-millimeter-water-4-176-c.html">pascal a milímetro de agua (4°C)</a></div></li>
+<li>1 pulgada de agua (4°C) [inAq] = 249.082 pascal [Pa]<div>
+<a href="pressure/inch-water-4-176-c-to-pascal.html">pulgada agua (4°C) a pascal</a> , &nbsp;  <a href="pressure/pascal-to-inch-water-4-176-c.html">pascal a pulgada agua (4°C)</a></div></li>
+<li>1 pie de agua (4°C) [ftAq] = 2988.98 pascal [Pa]<div>
+<a href="pressure/foot-water-4-176-c-to-pascal.html">pie agua (4°C) a pascal</a> , &nbsp;  <a href="pressure/pascal-to-foot-water-4-176-c.html">pascal a pie agua (4°C)</a></div></li>
+<li>1 pulgada de agua (60°F) [inAq] = 248.843 pascal [Pa]<div>
+<a href="pressure/inch-water-60-176-f-to-pascal.html">pulgada de agua (60°F) a pascal</a> , &nbsp;  <a href="pressure/pascal-to-inch-water-60-176-f.html">pascal a pulgada de agua (60°F)</a></div></li>
+<li>1 pie de agua (60°F) [ftAq] = 2986.116 pascal [Pa]<div>
+<a href="pressure/foot-water-60-176-f-to-pascal.html">pie de agua (60°F) a pascal</a> , &nbsp;  <a href="pressure/pascal-to-foot-water-60-176-f.html">pascal a pie de agua (60°F)</a></div></li>
+<li>1 atmósfera técnica [at] = 98066.500000003 pascal [Pa]<div>
+<a href="pressure/atmosphere-technical-to-pascal.html">atmósfera técnica a pascal</a> , &nbsp;  <a href="pressure/pascal-to-atmosphere-technical.html">pascal a atmósfera técnica</a></div></li></ul>	</div>
+	<div id="right">
+		<div id="rightAdUnit" style="text-align:center;">	<p style="text-align: center;font-size: 13px;">Publicidad</p> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1499277905602809" data-ad-slot="5056649317" data-ad-format="auto" data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script> <br></div>
+<br>
+<div id="othercalc"><div id="octitle">Todos los convertidores</div><div id="occontent"><a href="#" onclick="return showNav('Common Converters')" style="background-color: #eee;color:#0637ef;background-image: url('/images/down-arrow.svg');background-repeat: no-repeat;background-position: right 6px center;">Convertidores comunes</a><div id="ocsubnav"><a href="/length-converter.html">Longitud</a><a href="/weight-and-mass-converter.html">peso y masa</a><a href="/volume-converter.html">Volumen</a><a href="/temperature-converter.html">Temperatura</a><a href="/area-converter.html">Área</a><a href="/pressure-converter.html">Presión</a><a href="/energy-converter.html">Energía</a><a href="/power-converter.html">Fuerza</a><a href="/force-converter.html">Fuerza</a><a href="/time-converter.html">Tiempo</a><a href="/speed-converter.html">Velocidad</a><a href="/angle-converter.html">Ángulo</a><a href="/fuel-consumption-converter.html">El consumo de combustible</a><a href="/numbers-converter.html">Números</a><a href="/data-storage-converter.html">Almacenamiento de datos</a><a href="/volume-dry-converter.html">Volumen - Seco</a><a href="/currency-converter.html">Divisa</a><a href="/case-converter.html">Caso</a></div><a href="#" onclick="return showNav('Engineering Converters')">Convertidores de ingeniería</a><a href="#" onclick="return showNav('Heat Converters')">Convertidores de calor</a><a href="#" onclick="return showNav('Fluids Converters')">Convertidores de fluidos</a><a href="#" onclick="return showNav('Light Converters')">Convertidores de luz</a><a href="#" onclick="return showNav('Electricity Converters')">Convertidores de electricidad</a><a href="#" onclick="return showNav('Magnetism Converters')">Convertidores de magnetismo</a><a href="#" onclick="return showNav('Radiology Converters')">Convertidores de radiología</a><a href="/common-unit-systems.html">Sistemas de unidades comunes</a></div></div>
+<script>var navSectionName = "Common Converters";</script>	</div>
+</div>
+<div id="clear"></div>
+<div id="footer">
+	<div id="footerin">
+		<div id="footernav"><a href="about-us.html">Sobre nosotros</a> | <a href="about-us.html#terms">Condiciones de uso</a> | <a href="about-us.html#privacy">Política de Privacidad</a> | <a href="sitemap.html">Mapa del sitio</a>  &nbsp; © 2020 - 2023 <a href="index.html">UnitConverter.Vidfom.com</a></div>
+	</div>
+</div>
+<div class='sticky-ads' id='sticky-ads'>
+<div class='sticky-ads-close' onclick='document.getElementById("sticky-ads").style.display="none"'><svg viewbox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'/></svg></div> 
+<div class='sticky-ads-content'> 
+<ins class="adsbygoogle" style="display:block"   
+data-ad-client="ca-pub-1499277905602809" 
+data-ad-slot="5056649317"  
+data-ad-format="auto" 
+data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script>   
+</div></div> 
+</body>
+</html>

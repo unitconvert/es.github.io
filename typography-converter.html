@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	
+	<title>Convertidor de tipografía</title>
+	<meta name="description" content="Free online typography converter - converts between 15 units of typography, including twip, meter [m], centimeter [cm], millimeter [mm], etc. Also, explore many other unit converters or learn more about typography unit conversions.">
+	<link rel="stylesheet" type="text/css" href="/lib/cmtoin.css"> 
+    <link rel="stylesheet" type="text/css" href="/lib/ads.css"> 
+    <script src="/lib/unit1.js" async=""></script> 
+    <meta property="og:locale" content="es"> 
+    <meta property="og:type" content="website"> 
+    <meta property="og:site_name" content="Unit Converter Vidfom.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<div id="google_translate_element" style="display:none;"></div>
+    <script type="text/javascript" src="/lib/element.js"></script>
+	<meta name="google-site-verification" content="Lgok9kGtWHPAaB_O0qHWdtt1hcVyWRwLpeFVzS2AEFY" />
+	<script src="/lib/unit.js" async></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="/lib/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/lib/icon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/lib/icon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div id="headerout">
+	<div id="header">
+		<div id="logo">  <a href="/"> <span class="panelmsg" translate="no"> <font style="color:#0637ef;font-size: 25px;">Unit</font><strong style="color:#000;font-size: 25px;">Converter</strong><font style="color: #807070;font-size: 25px;">.Vidfom.com</font></span></a></div>
+	</div>
+</div>
+<div id="clear"></div>
+<div id="contentout">
+	<div id="content">
+					<img src="../images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+				<div class="topnav"><a href="index.html">Inicio</a> / <a href="other-converters.html">Otros Convertidores</a> / Convertidor Tipografía</div>
+		<h1>Convertidor de tipografía</h1>
+<div id="unquickcalc" style="display:none;"></div>
+
+<div id="ucresult" class="ucresulttext"></div>
+<form>
+<table id="uctable">
+	<tbody><tr>
+		<td class="uccell"><label for="ucfrom">De:</label>
+<br>
+<input type="text" name="ucfrom" class="ucinput" id="ucfrom" onkeyup="ucUpdateResult();" autofocus=""></td>
+		<td class="uccell"><label for="ucto">A:</label>
+<br>
+<input type="text" name="ucto" class="ucinput" id="ucto" style="background-color:#eeeeee;" readonly=""></td>
+	</tr>
+	<tr>
+		<td class="uccell">
+			<select name="ucfromunit" id="ucfromunit" size="15" onchange="ucUpdateResult();" class="ucselect"><option value="twip [1]" selected="">golpe</option>
+<option value="meter [m] [1.7638888888889E-5]">metro [m]</option>
+<option value="centimeter [cm] [0.0017638888888889]">centímetro [cm]</option>
+<option value="millimeter [mm] [0.017638888888889]">milímetro [mm]</option>
+<option value="character (X) [0.0083333333333333]">carácter (X)</option>
+<option value="character (Y) [0.0041666666666667]">carácter (Y)</option>
+<option value="pixel (X) [0.066666666666667]">píxel (X)</option>
+<option value="pixel (Y) [0.066666666666667]">píxel (Y)</option>
+<option value="inch [in] [0.00069444444444444]">pulgada [en]</option>
+<option value="pica (computer) [0.0041666666666667]">pica (computadora)</option>
+<option value="pica (printer's) [0.0041822917084896]">pica (impresora)</option>
+<option value="PostScript point [0.05]">punto de postscript</option>
+<option value="point (computer) [0.05]">punto (computadora)</option>
+<option value="point (printer's) [0.0501875]">punto (impresora)</option>
+<option value="en [0.100375]">es</option></select>
+		</td>
+		<td class="uccell">
+			<select name="uctounit" id="uctounit" size="15" onchange="ucUpdateResult();" class="ucselect">
+
+<option value="twip [1]">twip</option>
+<option value="meter [m] [1.7638888888889E-5]">meter [m]</option>
+<option value="centimeter [cm] [0.0017638888888889]">centimeter [cm]</option>
+<option value="millimeter [mm] [0.017638888888889]">millimeter [mm]</option>
+<option value="character (X) [0.0083333333333333]">character (X)</option>
+<option value="character (Y) [0.0041666666666667]">character (Y)</option>
+<option value="pixel (X) [0.066666666666667]">pixel (X)</option>
+<option value="pixel (Y) [0.066666666666667]">pixel (Y)</option>
+<option value="inch [in] [0.00069444444444444]">inch [in]</option>
+<option value="pica (computer) [0.0041666666666667]">pica (computer)</option>
+<option value="pica (printer's) [0.0041822917084896]">pica (printer's)</option>
+<option value="PostScript point [0.05]">PostScript point</option>
+<option value="point (computer) [0.05]">point (computer)</option><option value="point (printer's) [0.0501875]">point (printer's)</option><option value="en [0.100375]">en</option></select>
+		</td>
+	</tr>
+</tbody></table>
+</form>
+<script>noValidation=0;</script>
+<br>
+<h3>Lista completa de unidades tipográficas para conversión</h3>
+<ul class="allunits"><li>golpe</li>
+<li>1 metro [m] = 56692.913385826 twip<div>
+<a href="typography/meter-to-twip.html">metro a twip</a> , &nbsp;  <a href="typography/twip-to-meter.html">twip a metro</a></div></li>
+<li>1 centímetro [cm] = 566,9291338583 twip<div>
+<a href="typography/centimeter-to-twip.html">centímetro a twip</a> , &nbsp;  <a href="typography/twip-to-centimeter.html">twip a centímetro</a></div></li>
+<li>1 milímetro [mm] = 56,6929133858 twip<div>
+<a href="typography/millimeter-to-twip.html">milímetro a twip</a> , &nbsp;  <a href="typography/twip-to-millimeter.html">twip a milímetro</a></div></li>
+<li>1 carácter (X) = 120 twip<div>
+<a href="typography/character-x-to-twip.html">carácter (X) a twip</a> , &nbsp;  <a href="typography/twip-to-character-x.html">twip a carácter (X)</a></div></li>
+<li>1 carácter (Y) = 240 twip<div>
+<a href="typography/character-y-to-twip.html">carácter (Y) a twip</a> , &nbsp;  <a href="typography/twip-to-character-y.html">twip a carácter (Y)</a></div></li>
+<li>1 píxel (X) = 15 twip<div>
+<a href="typography/pixel-x-to-twip.html">píxel (X) a twip</a> , &nbsp;  <a href="typography/twip-to-pixel-x.html">twip a píxel (X)</a></div></li>
+<li>1 píxel (Y) = 15 twip<div>
+<a href="typography/pixel-y-to-twip.html">píxel (Y) a twip</a> , &nbsp;  <a href="typography/twip-to-pixel-y.html">twip a píxel (Y)</a></div></li>
+<li>1 pulgada [in] = 1440 twip<div>
+<a href="typography/inch-to-twip.html">pulgada a twip</a> , &nbsp;  <a href="typography/twip-to-inch.html">twip a pulgada</a></div></li>
+<li>1 pica (computadora) = 240 twip<div>
+<a href="typography/pica-computer-to-twip.html">pica (computadora) a twip</a> , &nbsp;  <a href="typography/twip-to-pica-computer.html">twip a pica (computadora)</a></div></li>
+<li>1 pica (de la impresora) = 239.10336 twip<div>
+<a href="typography/pica-printer-s-to-twip.html">pica (impresora) a twip</a> , &nbsp;  <a href="typography/twip-to-pica-printer-s.html">twip a pica (impresora)</a></div></li>
+<li>1 punto PostScript = 20 twip<div>
+<a href="typography/postscript-point-to-twip.html">punto PostScript a twip</a> , &nbsp;  <a href="typography/twip-to-postscript-point.html">twip a punto PostScript</a></div></li>
+<li>1 punto (computadora) = 20 twip<div>
+<a href="typography/point-computer-to-twip.html">punto (computadora) a twip</a> , &nbsp;  <a href="typography/twip-to-point-computer.html">twip a punto (computadora)</a></div></li>
+<li>1 punto (de la impresora) = 19,9252801993 twip<div>
+<a href="typography/point-printer-s-to-twip.html">punto (impresora) a twip</a> , &nbsp;  <a href="typography/twip-to-point-printer-s.html">twip a punto (impresora)</a></div></li>
+<li>1 en = 9.9626400996 twip<div>
+<a href="typography/en-to-twip.html">es a twip</a> , &nbsp;  <a href="typography/twip-to-en.html">twip a es</a></div></li></ul>	</div>
+	<div id="right">
+		<div id="rightAdUnit" style="text-align:center;">	<p style="text-align: center;font-size: 13px;">Publicidad</p> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1499277905602809" data-ad-slot="5056649317" data-ad-format="auto" data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script> <br></div>
+<br>
+<div id="othercalc"><div id="octitle">Todos los convertidores</div><div id="occontent"><a href="#" onclick="return showNav('Common Converters')">Convertidores comunes</a><a href="#" onclick="return showNav('Engineering Converters')">Convertidores de ingeniería</a><a href="#" onclick="return showNav('Heat Converters')">Convertidores de calor</a><a href="#" onclick="return showNav('Fluids Converters')">Convertidores de fluidos</a><a href="#" onclick="return showNav('Light Converters')">Convertidores de luz</a><a href="#" onclick="return showNav('Electricity Converters')">Convertidores de electricidad</a><a href="#" onclick="return showNav('Magnetism Converters')">Convertidores de magnetismo</a><a href="#" onclick="return showNav('Radiology Converters')">Convertidores de radiología</a><a href="/common-unit-systems.html">Sistemas de unidades comunes</a></div></div>
+<script>var navSectionName = "";</script>	</div>
+</div>
+<div id="clear"></div>
+<div id="footer">
+	<div id="footerin">
+		<div id="footernav"><a href="about-us.html">Sobre nosotros</a> | <a href="about-us.html#terms">Condiciones de uso</a> | <a href="about-us.html#privacy">Política de Privacidad</a> | <a href="sitemap.html">Mapa del sitio</a>  &nbsp; © 2020 - 2023 <a href="index.html">UnitConverter.Vidfom.com</a></div>
+	</div>
+</div>
+<div class='sticky-ads' id='sticky-ads'>
+<div class='sticky-ads-close' onclick='document.getElementById("sticky-ads").style.display="none"'><svg viewbox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'/></svg></div> 
+<div class='sticky-ads-content'> 
+<ins class="adsbygoogle" style="display:block"   
+data-ad-client="ca-pub-1499277905602809" 
+data-ad-slot="5056649317"  
+data-ad-format="auto" 
+data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script>   
+</div></div> 
+</body>
+</html>

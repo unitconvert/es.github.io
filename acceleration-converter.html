@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	
+	<title>Convertidor de aceleración</title>
+	<meta name="description" content="Free online acceleration converter - converts between 19 units of acceleration, including meter/square second, decimeter/square second, kilometer/square second, hectometer/square second, etc. Also, explore many other unit converters or learn more about acceleration unit conversions.">
+	<link rel="stylesheet" type="text/css" href="/lib/cmtoin.css"> 
+    <link rel="stylesheet" type="text/css" href="/lib/ads.css"> 
+    <script src="/lib/unit1.js" async=""></script> 
+    <meta property="og:locale" content="es"> 
+    <meta property="og:type" content="website"> 
+    <meta property="og:site_name" content="Unit Converter Vidfom.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<div id="google_translate_element" style="display:none;"></div>
+    <script type="text/javascript" src="/lib/element.js"></script>
+	<meta name="google-site-verification" content="Lgok9kGtWHPAaB_O0qHWdtt1hcVyWRwLpeFVzS2AEFY" />
+	<script src="/lib/unit.js" async></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="/lib/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/lib/icon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/lib/icon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div id="headerout">
+	<div id="header">
+		<div id="logo">  <a href="/"> <span class="panelmsg" translate="no"> <font style="color:#0637ef;font-size: 25px;">Unit</font><strong style="color:#000;font-size: 25px;">Converter</strong><font style="color: #807070;font-size: 25px;">.Vidfom.com</font></span></a></div>
+	</div>
+</div>
+<div id="clear"></div>
+<div id="contentout">
+	<div id="content">
+					<img src="../images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+				<div class="topnav"><a href="index.html">Inicio</a> / <a href="engineering-converters.html">Convertidores de Ingeniería</a> / Convertidor de Aceleración</div>
+		<h1>Convertidor de aceleración</h1>
+<div id="unquickcalc" style="display:none;"></div>
+
+<div id="ucresult" class="ucresulttext"></div>
+<form>
+<table id="uctable">
+	<tbody><tr>
+		<td class="uccell"><label for="ucfrom">De:</label>
+<br>
+<input type="text" name="ucfrom" class="ucinput" id="ucfrom" onkeyup="ucUpdateResult();" autofocus=""></td>
+		<td class="uccell"><label for="ucto">A:</label>
+<br>
+<input type="text" name="ucto" class="ucinput" id="ucto" style="background-color:#eeeeee;" readonly=""></td>
+	</tr>
+	<tr>
+		<td class="uccell">
+			<select name="ucfromunit" id="ucfromunit" size="15" onchange="ucUpdateResult();" class="ucselect"><option value="meter/square second [1000]" selected="">metro/segundo cuadrado</option>
+<option value="decimeter/square second [10000]">decímetro/segundo cuadrado</option>
+<option value="kilometer/square second [1]">kilómetro/segundo cuadrado</option>
+<option value="hectometer/square second [10]">hectómetro/segundo cuadrado</option>
+<option value="dekameter/square second [100]">decámetro/segundo cuadrado</option>
+<option value="centimeter/square second [100000]">centímetro/segundo cuadrado</option>
+<option value="millimeter/square second [1000000]">milímetro/segundo cuadrado</option>
+<option value="micrometer/square second [1000000000]">micrómetro/segundo cuadrado</option>
+<option value="nanometer/square second [1000000000000]">nanómetro/segundo cuadrado</option>
+<option value="picometer/square second [1.0E+15]">picómetro/segundo cuadrado</option>
+<option value="femtometer/square second [1.0E+18]">femtometro/segundo cuadrado</option>
+<option value="attometer/square second [1.0E+21]">attómetro/segundo cuadrado</option>
+<option value="gal [Gal] [100000]">gal [gal]</option>
+<option value="galileo [Gal] [100000]">galileo [gal]</option>
+<option value="mile/square second [mi/s^2] [0.62137119223733]">milla/segundo cuadrado [mi/s^2]</option>
+<option value="yard/square second [1093.6132983377]">yarda/segundo cuadrado</option>
+<option value="foot/square second [ft/s^2] [3280.8398950131]">pie/segundo cuadrado [ft/s^2]</option>
+<option value="inch/square second [in/s^2] [39370.078740157]">pulgada/segundo cuadrado [in/s^2]</option>
+<option value="Acceleration of gravity [g] [101.97162129779]">Aceleración de la gravedad [g]</option></select>
+		</td>
+		<td class="uccell">
+			<select name="uctounit" id="uctounit" size="15" onchange="ucUpdateResult();" class="ucselect">
+
+<option value="meter/square second [1000]">meter/square second</option>
+<option value="decimeter/square second [10000]">decimeter/square second</option>
+<option value="kilometer/square second [1]">kilometer/square second</option>
+<option value="hectometer/square second [10]">hectometer/square second</option>
+<option value="dekameter/square second [100]">dekameter/square second</option>
+<option value="centimeter/square second [100000]">centimeter/square second</option>
+<option value="millimeter/square second [1000000]">millimeter/square second</option>
+<option value="micrometer/square second [1000000000]">micrometer/square second</option>
+<option value="nanometer/square second [1000000000000]">nanometer/square second</option>
+<option value="picometer/square second [1.0E+15]">picometer/square second</option>
+<option value="femtometer/square second [1.0E+18]">femtometer/square second</option>
+<option value="attometer/square second [1.0E+21]">attometer/square second</option>
+<option value="gal [Gal] [100000]">gal [Gal]</option>
+<option value="galileo [Gal] [100000]">galileo [Gal]</option>
+<option value="mile/square second [mi/s^2] [0.62137119223733]">mile/square second [mi/s^2]</option>
+<option value="yard/square second [1093.6132983377]">yard/square second</option>
+<option value="foot/square second [ft/s^2] [3280.8398950131]">foot/square second [ft/s^2]</option><option value="inch/square second [in/s^2] [39370.078740157]">inch/square second [in/s^2]</option><option value="Acceleration of gravity [g] [101.97162129779]">Acceleration of gravity [g]</option></select>
+		</td>
+	</tr>
+</tbody></table>
+</form>
+<script>noValidation=0;</script>
+<br>
+<h3>Lista completa de unidades de aceleración para conversión</h3>
+<ul class="allunits"><li>metro/segundo cuadrado</li>
+<li>1 decímetro/segundo cuadrado = 0,1 metros/segundo cuadrado<div>
+<a href="acceleration/decimeter-square-second-to-meter-square-second.html">decímetro/segundo cuadrado a metro/segundo cuadrado</a> , &nbsp;  <a href="acceleration/meter-square-second-to-decimeter-square-second.html">metro/segundo cuadrado a decímetro/segundo cuadrado</a></div></li>
+<li>1 kilómetro/segundo cuadrado = 1000 metros/segundo cuadrado<div>
+<a href="acceleration/kilometer-square-second-to-meter-square-second.html">kilómetro/segundo cuadrado a metro/segundo cuadrado</a> , &nbsp;  <a href="acceleration/meter-square-second-to-kilometer-square-second.html">metro/segundo cuadrado a kilómetro/segundo cuadrado</a></div></li>
+<li>1 hectómetro/segundo cuadrado = 100 metros/segundo cuadrado<div>
+<a href="acceleration/hectometer-square-second-to-meter-square-second.html">hectómetro/segundo cuadrado a metro/segundo cuadrado</a> , &nbsp;  <a href="acceleration/meter-square-second-to-hectometer-square-second.html">metro/segundo cuadrado a hectómetro/segundo cuadrado</a></div></li>
+<li>1 decámetro/segundo cuadrado = 10 metros/segundo cuadrado<div>
+<a href="acceleration/dekameter-square-second-to-meter-square-second.html">decámetro/segundo cuadrado a metro/segundo cuadrado</a> , &nbsp;  <a href="acceleration/meter-square-second-to-dekameter-square-second.html">metro/segundo cuadrado a decámetro/segundo cuadrado</a></div></li>
+<li>1 centímetro/segundo cuadrado = 0,01 metros/segundo cuadrado<div>
+<a href="acceleration/centimeter-square-second-to-meter-square-second.html">centímetro/segundo cuadrado a metro/segundo cuadrado</a> , &nbsp;  <a href="acceleration/meter-square-second-to-centimeter-square-second.html">metro/segundo cuadrado a centímetro/segundo cuadrado</a></div></li>
+<li>1 milímetro/segundo cuadrado = 0,001 metros/segundo cuadrado<div>
+<a href="acceleration/millimeter-square-second-to-meter-square-second.html">milímetro/segundo cuadrado a metro/segundo cuadrado</a> , &nbsp;  <a href="acceleration/meter-square-second-to-millimeter-square-second.html">metro/segundo cuadrado a milímetro/segundo cuadrado</a></div></li>
+<li>1 micrómetro/segundo cuadrado = 1.0E-6 metro/segundo cuadrado<div>
+<a href="acceleration/micrometer-square-second-to-meter-square-second.html">micrómetro/segundo cuadrado en metro/segundo cuadrado</a> , &nbsp;  <a href="acceleration/meter-square-second-to-micrometer-square-second.html">metro/segundo cuadrado en micrómetro/segundo cuadrado</a></div></li>
+<li>1 nanómetro/segundo cuadrado = 1.0E-9 metro/segundo cuadrado<div>
+<a href="acceleration/nanometer-square-second-to-meter-square-second.html">nanómetro/segundo cuadrado a metro/segundo cuadrado</a> , &nbsp;  <a href="acceleration/meter-square-second-to-nanometer-square-second.html">metro/segundo cuadrado a nanómetro/segundo cuadrado</a></div></li>
+<li>1 picómetro/segundo cuadrado = 1,0E-12 metros/segundo cuadrado<div>
+<a href="acceleration/picometer-square-second-to-meter-square-second.html">picómetro/segundo cuadrado a metro/segundo cuadrado</a> , &nbsp;  <a href="acceleration/meter-square-second-to-picometer-square-second.html">metro/segundo cuadrado a picómetro/segundo cuadrado</a></div></li>
+<li>1 femtómetro/segundo cuadrado = 1.0E-15 metro/segundo cuadrado<div>
+<a href="acceleration/femtometer-square-second-to-meter-square-second.html">femtometro/segundo cuadrado en metro/segundo cuadrado</a> , &nbsp;  <a href="acceleration/meter-square-second-to-femtometer-square-second.html">metro/segundo cuadrado en femtometro/segundo cuadrado</a></div></li>
+<li>1 atómetro/segundo cuadrado = 1,0E-18 metros/segundo cuadrado<div>
+<a href="acceleration/attometer-square-second-to-meter-square-second.html">attometro/segundo cuadrado a metro/segundo cuadrado</a> , &nbsp;  <a href="acceleration/meter-square-second-to-attometer-square-second.html">metro/segundo cuadrado a attometro/segundo cuadrado</a></div></li>
+<li>1 gal [Gal] = 0,01 metro/segundo cuadrado<div>
+<a href="acceleration/gal-to-meter-square-second.html">gal a metro/segundo cuadrado</a> , &nbsp;  <a href="acceleration/meter-square-second-to-gal.html">metro/segundo cuadrado a gal</a></div></li>
+<li>1 galileo [Gal] = 0,01 metro/segundo cuadrado<div>
+<a href="acceleration/galileo-to-meter-square-second.html">galileo a metro/segundo cuadrado</a> , &nbsp;  <a href="acceleration/meter-square-second-to-galileo.html">metro/segundo cuadrado a galileo</a></div></li>
+<li>1 milla/segundo cuadrado [mi/s^2] = 1609,344 metros/segundo cuadrado<div>
+<a href="acceleration/mile-square-second-to-meter-square-second.html">milla/segundo cuadrado a metro/segundo cuadrado</a> , &nbsp;  <a href="acceleration/meter-square-second-to-mile-square-second.html">metro/segundo cuadrado a milla/segundo cuadrado</a></div></li>
+<li>1 yarda/segundo cuadrado = 0,9144 metros/segundo cuadrado<div>
+<a href="acceleration/yard-square-second-to-meter-square-second.html">yarda/segundo cuadrado a metro/segundo cuadrado</a> , &nbsp;  <a href="acceleration/meter-square-second-to-yard-square-second.html">metro/segundo cuadrado a yarda/segundo cuadrado</a></div></li>
+<li>1 pie/segundo cuadrado [ft/s^2] = 0,3048 metros/segundo cuadrado<div>
+<a href="acceleration/foot-square-second-to-meter-square-second.html">pie/segundo cuadrado a metro/segundo cuadrado</a> , &nbsp;  <a href="acceleration/meter-square-second-to-foot-square-second.html">metro/segundo cuadrado a pie/segundo cuadrado</a></div></li>
+<li>1 pulgada/segundo cuadrado [in/s^2] = 0,0254 metros/segundo cuadrado<div>
+<a href="acceleration/inch-square-second-to-meter-square-second.html">pulgada/segundo cuadrado a metro/segundo cuadrado</a> , &nbsp;  <a href="acceleration/meter-square-second-to-inch-square-second.html">metro/segundo cuadrado a pulgada/segundo cuadrado</a></div></li>
+<li>1 Aceleración de la gravedad [g] = 9,80665 metros/segundo cuadrado<div>
+<a href="acceleration/acceleration-of-gravity-to-meter-square-second.html">aceleración de la gravedad a metro/segundo cuadrado</a> , &nbsp;  <a href="acceleration/meter-square-second-to-acceleration-of-gravity.html">metro/segundo cuadrado a aceleración de la gravedad</a></div></li></ul>	</div>
+	<div id="right">
+		<div id="rightAdUnit" style="text-align:center;">	<p style="text-align: center;font-size: 13px;">Publicidad</p> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1499277905602809" data-ad-slot="5056649317" data-ad-format="auto" data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script> <br></div>
+<br>
+<div id="othercalc"><div id="octitle">Todos los convertidores</div><div id="occontent"><a href="#" onclick="return showNav('Common Converters')">Convertidores comunes</a><a href="#" onclick="return showNav('Engineering Converters')" style="background-color: #eee;color:#0637ef;background-image: url('/images/down-arrow.svg');background-repeat: no-repeat;background-position: right 6px center;">Convertidores de ingeniería</a><div id="ocsubnav"><a href="/volume-converter.html">Volumen</a><a href="/temperature-converter.html">Temperatura</a><a href="/area-converter.html">Área</a><a href="/pressure-converter.html">Presión</a><a href="/energy-converter.html">Energía</a><a href="/power-converter.html">Fuerza</a><a href="/force-converter.html">Fuerza</a><a href="/time-converter.html">Tiempo</a><a href="/speed-converter.html">Velocidad</a><a href="/angle-converter.html">Ángulo</a><a href="/fuel-consumption-converter.html">El consumo de combustible</a><a href="/numbers-converter.html">Números</a><a href="/data-storage-converter.html">Almacenamiento de datos</a><a href="/volume-dry-converter.html">Volumen - Seco</a><a href="/index.html">Hogar</a><a href="/velocity-angular-converter.html">Velocidad - Angular</a><a href="/acceleration-converter.html">Aceleración</a><a href="/acceleration-angular-converter.html">Aceleración - Angular</a><a href="/density-converter.html">Densidad</a><a href="/specific-volume-converter.html">Volumen específico</a><a href="/moment-of-inertia-converter.html">Momento de inercia</a><a href="/moment-of-force-converter.html">Momento de fuerza</a><a href="/torque-converter.html">Esfuerzo de torsión</a></div><a href="#" onclick="return showNav('Heat Converters')">Convertidores de calor</a><a href="#" onclick="return showNav('Fluids Converters')">Convertidores de fluidos</a><a href="#" onclick="return showNav('Light Converters')">Convertidores de luz</a><a href="#" onclick="return showNav('Electricity Converters')">Convertidores de electricidad</a><a href="#" onclick="return showNav('Magnetism Converters')">Convertidores de magnetismo</a><a href="#" onclick="return showNav('Radiology Converters')">Convertidores de radiología</a><a href="/common-unit-systems.html">Sistemas de unidades comunes</a></div></div>
+<script>var navSectionName = "Engineering Converters";</script>	</div>
+</div>
+<div id="clear"></div>
+<div id="footer">
+	<div id="footerin">
+		<div id="footernav"><a href="about-us.html">Sobre nosotros</a> | <a href="about-us.html#terms">Condiciones de uso</a> | <a href="about-us.html#privacy">Política de Privacidad</a> | <a href="sitemap.html">Mapa del sitio</a>  &nbsp; © 2020 - 2023 <a href="index.html">UnitConverter.Vidfom.com</a></div>
+	</div>
+</div>
+<div class='sticky-ads' id='sticky-ads'>
+<div class='sticky-ads-close' onclick='document.getElementById("sticky-ads").style.display="none"'><svg viewbox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'/></svg></div> 
+<div class='sticky-ads-content'> 
+<ins class="adsbygoogle" style="display:block"   
+data-ad-client="ca-pub-1499277905602809" 
+data-ad-slot="5056649317"  
+data-ad-format="auto" 
+data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script>   
+</div></div> 
+</body>
+</html>
