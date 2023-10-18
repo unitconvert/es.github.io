@@ -9,6 +9,7 @@ Disallow: /ja/
 Disallow: /pt/
 Disallow: /zh-Hant/
 Disallow: /zh-Hans/
+Disallow: /currency/
 Sitemap: https://unitconverter.vidfom.com/sitemap.xml
 Sitemap: https://unitconverter.vidfom.com/sitemap-results-0001.xml
 Sitemap: https://unitconverter.vidfom.com/sitemap-results-0002.xml
